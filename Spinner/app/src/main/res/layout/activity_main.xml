@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AEAAAA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ứng dụng chuyển đổi tiền tệ"
+            android:textSize="32dp"
+            android:id="@+id/title"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:text="Mệnh giá"
+            android:id="@+id/srcSelect">
+        </androidx.appcompat.widget.AppCompatSpinner>
+        <EditText
+            android:layout_width="20dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/srcInput"
+            android:inputType="number">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="32dp"
+            android:text="Mệnh giá"
+            android:id="@+id/desSelect">
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/desInput"
+            android:inputType="number">
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>
