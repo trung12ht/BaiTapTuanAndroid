@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Gmail_"
+rootProject.name = "Gmail"
